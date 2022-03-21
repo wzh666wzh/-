@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main(){
+	char a[]={"It is not easy when you want to make something change,but if it is easy that everyone can make it"};
+		int i,j,k=0;
+	for(j=0;j<200;j++){
+		if(a[j]<'Z'&&a[j]>'A'){
+			a[j]=a[j]+32;}
+	}
+	for(i=0;i<200;i++){
+		if(a[i]=='i'&&a[i+1]=='t'){
+			k++;}
+	}
+	printf("%d\n",k);
+}
